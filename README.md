@@ -1,2 +1,2 @@
 # Leetcode_Learning-notes
-My leetcode problem notes
+My leetcode problem notes. Use the python3 primarily to solve problem...
