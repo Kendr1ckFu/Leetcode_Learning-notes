@@ -46,4 +46,14 @@ class Solution:
 执行用时：120 ms, 在所有 Python3 提交中击败了39.21%的用户
 内存消耗：15.2 MB, 在所有 Python3 提交中击败了61.87%的用户
 通过测试用例：55 / 55
+
+官方解法：
+class Solution:
+    def superPow(self, a: int, b: List[int]) -> int:
+        MOD = 1337
+        ans = 1
+        for e in reversed(b):
+            ans = ans * pow(a, e, MOD) % MOD
+            a = pow(a, 10, MOD)
+        return ans
 '''
